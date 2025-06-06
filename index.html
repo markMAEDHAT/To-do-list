@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List with Groups</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 To-Do List with Groups</h1>
+
+    <div class="input-group">
+      <input type="text" id="groupName" placeholder="Enter group name..." />
+      <input type="text" id="taskInput" placeholder="Enter a new task..." />
+
+      <!-- Priority Dropdown -->
+      <select id="taskPriority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+
+      <!-- Date Input -->
+      <input type="date" id="taskDate" />
+
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div class="action-buttons">
+      <button onclick="deleteAllTasks()">Delete All Tasks</button>
+    </div>
+
+    <div id="groupsContainer"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
